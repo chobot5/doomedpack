@@ -1,6 +1,6 @@
 {
   "name": "@doomedpack/function",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "",
   "private": false,
   "files": [
@@ -26,6 +26,11 @@
       "require": "./dist/object/index.js",
       "types": "./dist/object/index.d.ts"
     },
+    "./object/*": {
+      "import": "./dist/object/*.mjs",
+      "require": "./dist/object/*.js",
+      "types": "./dist/object/*.d.ts"
+    },
     "./array": {
       "import": "./dist/array/index.mjs",
       "require": "./dist/array/index.js",
@@ -48,7 +53,12 @@
   "typesVersions": {
     "*": {
       "functions/*": [
-        "dist/functions/*.d.ts"
+        "dist/array/*.d.ts",
+        "dist/object/*.d.ts",
+        "dist/enums/*.d.ts",
+        "dist/number/*.d.ts",
+        "dist/predicate/*.d.ts",
+        "dist/types/*.d.ts"
       ]
     }
   },
