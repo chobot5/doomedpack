@@ -1,6 +1,6 @@
 {
   "name": "@doomedpack/functions",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "private": false,
   "files": [
@@ -11,6 +11,7 @@
     "README.md",
     "CHANGELOG.md"
   ],
+  "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
