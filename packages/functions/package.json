@@ -1,0 +1,79 @@
+{
+  "name": "@doomedpack/function",
+  "version": "0.0.4",
+  "description": "",
+  "private": false,
+  "files": [
+    "dist/**",
+    ".npmignore",
+    ".gitignore",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./object": {
+      "import": "./dist/object/index.mjs",
+      "require": "./dist/object/index.js",
+      "types": "./dist/object/index.d.ts"
+    },
+    "./array": {
+      "import": "./dist/array/index.mjs",
+      "require": "./dist/array/index.js",
+      "types": "./dist/array/index.d.ts"
+    },
+    "./predicates": {
+      "import": "./dist/predicates/index.mjs",
+      "require": "./dist/predicates/index.js",
+      "types": "./dist/predicates/index.d.ts"
+    },
+    "./enums": {
+      "import": "./dist/enums/index.mjs",
+      "require": "./dist/enums/index.js",
+      "types": "./dist/enums/index.d.ts"
+    },
+    "./types": {
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "functions/*": [
+        "dist/functions/*.d.ts"
+      ]
+    }
+  },
+  "scripts": {
+    "build": "env NODE_ENV=production tsup --config=tsup.config.ts",
+    "lint": "eslint -c .eslintrc.json --ext ts,tsx src/**/*",
+    "test": "vitest"
+  },
+  "engines": {
+    "node": ">18.0.0",
+    "pnpm": ">=6"
+  },
+  "keywords": [],
+  "author": "Milan Mladek",
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "commitlint": "^19.0.3",
+    "eslint": "^8.57.0",
+    "prettier": "^2.8.8",
+    "tsup": "^6.7.0",
+    "typescript": "^5.3.3",
+    "vitest": "^0.31.4"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "doomedpack",
+  "version": "0.1.0",
+  "description": "",
+  "private": false,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "release": "changeset publish"
+  },
+  "engines": {
+    "node": ">18.0.0",
+    "pnpm": ">=6"
+  },
+  "keywords": [],
+  "author": "Milan Mladek",
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "commitlint": "^19.0.3",
+    "eslint": "^8.57.0",
+    "prettier": "^2.8.8",
+    "tsup": "^6.7.0",
+    "typescript": "^5.3.3",
+    "vitest": "^0.31.4"
+  }
+}
