@@ -1,6 +1,6 @@
 {
   "name": "@doomedpack/functions",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "",
   "private": false,
   "files": [
@@ -17,11 +17,6 @@
   "types": "./dist/index.d.ts",
   "exports": {
     "./package.json": "./package.json",
-    "./object": {
-      "import": "./dist/object/index.mjs",
-      "require": "./dist/object/index.js",
-      "types": "./dist/object/index.d.ts"
-    },
     "./object/*": {
       "import": "./dist/object/*.mjs",
       "require": "./dist/object/*.js",
