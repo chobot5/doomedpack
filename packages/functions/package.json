@@ -1,6 +1,6 @@
 {
   "name": "@doomedpack/functions",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "",
   "private": false,
   "files": [
@@ -11,12 +11,16 @@
     "README.md",
     "CHANGELOG.md"
   ],
-  "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
     "./package.json": "./package.json",
+    "./object": {
+      "import": "./dist/object/index.mjs",
+      "require": "./dist/object/index.js",
+      "types": "./dist/object/index.d.ts"
+    },
     "./object/*": {
       "import": "./dist/object/*.mjs",
       "require": "./dist/object/*.js",
