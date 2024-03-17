@@ -1,6 +1,6 @@
 {
-  "name": "@doomedpack/function",
-  "version": "0.0.6",
+  "name": "@doomedpack/functions",
+  "version": "0.0.1",
   "description": "",
   "private": false,
   "files": [
@@ -36,15 +36,40 @@
       "require": "./dist/array/index.js",
       "types": "./dist/array/index.d.ts"
     },
+    "./array/*": {
+      "import": "./dist/array/*.mjs",
+      "require": "./dist/array/*.js",
+      "types": "./dist/array/*.d.ts"
+    },
     "./predicates": {
       "import": "./dist/predicates/index.mjs",
       "require": "./dist/predicates/index.js",
       "types": "./dist/predicates/index.d.ts"
     },
+    "./predicates/*": {
+      "import": "./dist/predicates/*.mjs",
+      "require": "./dist/predicates/*.js",
+      "types": "./dist/predicates/*.d.ts"
+    },
     "./enums": {
       "import": "./dist/enums/index.mjs",
       "require": "./dist/enums/index.js",
       "types": "./dist/enums/index.d.ts"
+    },
+    "./enums/*": {
+      "import": "./dist/enums/*.mjs",
+      "require": "./dist/enums/*.js",
+      "types": "./dist/enums/*.d.ts"
+    },
+    "./number": {
+      "import": "./dist/number/index.mjs",
+      "require": "./dist/number/index.js",
+      "types": "./dist/number/index.d.ts"
+    },
+    "./number/*": {
+      "import": "./dist/number/*.mjs",
+      "require": "./dist/number/*.js",
+      "types": "./dist/number/*.d.ts"
     },
     "./types": {
       "types": "./dist/types/index.d.ts"
